@@ -1,0 +1,12 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: demo-sec
+#  cloud:
+#    nacos:
+#      config:
+#        server-addr: 172.16.250.152:8848
+#        file-extension: yaml
+#        namespace: b0c88a62-df42-4dc4-b6a4-fffbc3905af3
+#        group: DEFAULT_GROUP

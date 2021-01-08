@@ -1,0 +1,19 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/
+spring:
+  application:
+    name: demo-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+      - id: sec
+        uri: lb://demo-sec
+        predicates:
+        - Path=/test/*
